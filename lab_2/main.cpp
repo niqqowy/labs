@@ -8,7 +8,7 @@ int main()
     cin>>a;
     if (a>0 && a<40)
     {
-        cout<< a*a*a;
+        cout<< "V= "<<a*a*a;
     }
     else
     {
