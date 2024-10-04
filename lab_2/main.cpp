@@ -1,15 +1,18 @@
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout<<"enter a number 'a': ";
-    int a;
-    std::cin>>a;
-    std::cout<<"enter a number 'h': ";
-    int h;
-    std::cin>>h;
-    std::cout << "S=" << a*h*0.5 <<std::endl;
+    cout<<"enter a number: ";
+    short a;
+    cin>>a;
+    if (a>0 && a<40)
+    {
+        cout<< a*a*a;
+    }
+    else
+    {
+        cout<<"number does not satisfy the rule";
+    }
     return 0;
-    
-     
 }
