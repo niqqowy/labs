@@ -26,7 +26,7 @@ int main()
                 if (maxim<i)
                 {
                     maxim=i;
-                    place=i;
+                    place++;
                 }
             }
             
