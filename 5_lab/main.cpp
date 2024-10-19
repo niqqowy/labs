@@ -3,14 +3,18 @@
 
 int main() 
 {
-    int i=1;
-    int n;
+    int i=0;
+    int n=0;
     unsigned long long multi=1;
     int maxim=INT_MIN;
     int place=0;
     
-    std::cout<<"enter the quantity of natural numbers of the sequence (it start from 1): "<<std::endl;
+    std::cout<<"start from: "<<std::endl;
+    std::cin>>i;
+    
+    std::cout<<"end on: "<<std::endl;
     std::cin>>n;
+    
     
     if(n>0)
     {
@@ -47,7 +51,7 @@ int main()
 /*
 int main()
 {
-    int N;
+    int N=0;
     int multi=1;
     int digit=0;
 
