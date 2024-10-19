@@ -16,7 +16,7 @@ int main()
     std::cin>>n;
     
     
-    if(n>0)
+    if(n>0 && i>0)
     {
         for (i;i<=n;i++)
         {
