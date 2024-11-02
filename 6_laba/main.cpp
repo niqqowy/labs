@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 
@@ -9,8 +10,8 @@ bool SameDigit(int number) {
     if(number>=0 && number<=9){
         return false;
     }
-    
-    int lastDigit = number % 10; 
+    int lastDigit =0;
+    lastDigit = number % 10; 
     while (number > 0) {
         if (number % 10 != lastDigit) {
             return false; 
@@ -111,10 +112,7 @@ void write(vector<int>& arr,int n){
 
 //
 void readmatrix(vector< vector<int> >& matrix,int& n,int& m){
-    cout<<"введите кол-во строк: ";
-    cin>>n;
-    cout<<"введите кол-во столбцов: ";
-    cin>>m;
+    
     for (int i=0;i<n;i++){
         for(int j=0;j<m;j++){
             cin>>matrix[i][j];
@@ -217,7 +215,9 @@ int main(){
             writetask1(numbers,n);
         }
         else{
-            cout<<"в последовательности менее 3 чисел с одинаковыми цифрами";
+            for(int i=0;i<n;i++){
+                cout<<numbers[i];
+            }
             cout<<" "<<endl;
         }
     }
@@ -231,7 +231,7 @@ int main(){
     cout<<"введите количество элементов последовательности: ";
     int max2;
     cin>>max2;
-    if (n>0 && n<=1000){
+    if (max2>0 && max2<=1000){
         read(numbers2,max2);
         sort(numbers2,compare);
         write(numbers2,max2);
@@ -245,50 +245,63 @@ int main(){
     cout<<"Задание 3 "<<endl;
     int gg;
     int mm;
+    cout<<"введите кол-во строк: ";
+    cin>>gg;
+    cout<<"введите кол-во столбцов: ";
+    cin>>mm;
     vector< vector<int> > matrix(gg,vector<int> (mm));
+    
+    
     readmatrix(matrix,gg,mm);
 
     int clmn=SearchColomnWMax(matrix,gg,mm);
 
-    
+    cout<<endl;
     newmatrix(matrix,clmn);
-    cout<<"Матрица: ";
+    
     writematrix(matrix,gg,mm);
-    cout<<"искомый столбец"<<clmn;
-
+    cout<<"искомый столбец "<<clmn + 1;
+    
+    
 
     cout<<" "<<endl;
     cout<<"Задание 4 "<<endl;
     int max3;
     cout << "Enter amount of numbers ";
     cin >> max3;
-    int arr[2*max3];
-    for (int i = 0; i < max3; i++) {
-        cin >> arr[i];
-    }
-
-    int ji = 0;
-    for (int i = 0; i < max3; i++) {
-        if (!j7(arr[i])) {
-            arr[ji++] = arr[i];
-         }
-    }
-    max3 = ji;
-
-    
-
-    for (int i=0;i<max3;i++){
-        if(ify2k(arr[i])){
-            max3++;
-            for(int j=max3-1;j>i;j--){
-                arr[j]=arr[j-1];
-            }
-            i++;
+    const int max33=20000;
+    int arr[max33];
+    if(max3>0 && max3<=10000){
+        for (int i = 0; i < max3; i++) {
+            cin >> arr[i];
         }
 
+        int ji = 0;
+        for (int i = 0; i < max3; i++) {
+            if (!j7(arr[i])) {
+                arr[ji++] = arr[i];
+            }
+        }
+        max3 = ji;
+
+        
+
+        for (int i=0;i<max3;i++){
+            if(ify2k(arr[i])){
+                max3++;
+                for(int j=max3-1;j>i;j--){
+                    arr[j]=arr[j-1];
+                }
+                i++;
+            }
+
+        }
+        for(int i=0;i<max3;i++){
+            cout<<arr[i]<<" ";
+        }
     }
-    for(int i=0;i<max3;i++){
-        cout<<arr[i]<<" ";
+    else{
+        cout<<"err";
     }
     return 0;
 }
