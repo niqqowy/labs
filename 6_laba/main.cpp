@@ -251,17 +251,20 @@ int main(){
     cin>>mm;
     vector< vector<int> > matrix(gg,vector<int> (mm));
     
-    
-    readmatrix(matrix,gg,mm);
+    if ((0<=gg && gg<=100) && (0<=mm && mm<=100)){
+        readmatrix(matrix,gg,mm);
 
-    int clmn=SearchColomnWMax(matrix,gg,mm);
+        int clmn=SearchColomnWMax(matrix,gg,mm);
 
-    cout<<endl;
-    newmatrix(matrix,clmn);
-    
-    writematrix(matrix,gg,mm);
-    cout<<"искомый столбец "<<clmn + 1;
-    
+        cout<<endl;
+        newmatrix(matrix,clmn);
+        
+        writematrix(matrix,gg,mm);
+        cout<<"искомый столбец "<<clmn + 1;
+    }
+    else {
+        cout<<"err";
+    }
     
 
     cout<<" "<<endl;
