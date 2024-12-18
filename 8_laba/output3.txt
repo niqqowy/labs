@@ -1,1 +1,1 @@
-HELLO(l, h) MY(y, m) favorite CUCLA.(l, u, c) 
+HELLO(l, h) MY(y, m) favorite KARTON(n, k) 
