@@ -4,7 +4,9 @@
 #include <iostream>
 #include <sstream>
 #include <algorithm>
+#include <unordered_set>
 
+const int max_n=5120;
 
 bool rightlett(char ch) {
     ch = tolower(ch); 
@@ -54,7 +56,6 @@ void writeRes(const std::vector<std::pair<int, std::string>> &wordPairs, const s
     }
 
 }
-
 void check(const std::string& inputFilename, const std::string& outputFilename){
     std::set<std::string> Word = read(inputFilename);
 
@@ -77,6 +78,8 @@ void check(const std::string& inputFilename, const std::string& outputFilename){
 
 
 }
+
+
 
 std::string tolowcase(std::string s){
     for (int i=0;i<s.length();i++){
@@ -176,4 +179,123 @@ void sort(int n, std::string words[5120]){
 
 
 
+bool read3(int& m, std::string words[max_n]){
+    std::ifstream innn("input3.txt");
+    if(!innn.is_open()){
+        std::cerr<<"file is not open"<<std::endl;
+        return false;
+    }
 
+    m=0;
+    while(!innn.eof()){
+        innn>>words[m];
+        m++;
+       
+    }
+    
+    return true;
+}
+int maxcount(int m, std::string words[5120]){
+    int maxLength = 0;
+    std::string longestWords[5120]; // Массив для хранения самых длинных слов
+    int longestCount = 0; // Счётчик самых длинных слов
+
+    // Проходим по всем словам
+    for (int i = 0; i < m; ++i) {
+        int wordLength = words[m].length();
+        if (wordLength > maxLength) {
+            // Если длина текущего слова больше максимальной, обновляем максимальную длину
+            maxLength = wordLength;
+            longestCount = 1;
+            longestWords[0] = words[m]; // Записываем это слово
+    }
+        else if (wordLength == maxLength) {
+            // Если длина слова равна максимальной, добавляем его в массив
+            longestWords[longestCount++] = words[m];
+        }
+        
+    }
+    return longestCount;
+}
+std::string toLowerCase(const std::string& str) {
+    std::string result = str;
+    for (char &ch : result) {
+        ch = std::tolower(ch);
+    }
+    return result;
+}
+std::string findMaxLengthWord(const std::vector<std::string>& words) {
+    std::string maxWord;
+    for (const std::string& word : words) {
+        if (word.length() > maxWord.length()) {
+            maxWord = word;
+        }
+    }
+    return maxWord;
+}
+std::unordered_set<char> getLettersInWord(const std::string& word) {
+    std::unordered_set<char> letters;
+    for (char ch : word) {
+        if (std::isalpha(ch)) {
+            letters.insert(std::tolower(ch)); 
+        }
+    }
+    return letters;
+}
+void writewordwithbr(const std::string& word, const std::unordered_set<char>& foundLetters, std::ofstream& outputFile) {
+    std::string uppercaseWord = word;
+    for (char &ch : uppercaseWord) {
+        ch = std::toupper(ch);
+    }
+
+    outputFile << uppercaseWord << "(";
+    bool first = true;
+    for (char letter : foundLetters) {
+        if (!first) {
+            outputFile << ", "; 
+        }
+        outputFile << letter;
+        first = false;
+    }
+    outputFile << ") ";
+}
+void processText(const std::vector<std::string>& words,const std::unordered_set<char>& maxWordLetters,std::ofstream& outputFile) {
+    for (int i = 0; i < words.size(); i++) {
+        std::string currentWord = words[i];
+        std::unordered_set<char> foundLetters;
+        std::string lowerWord = toLowerCase(currentWord);
+
+        for (char ch : lowerWord) {
+            if (std::isalpha(ch) && maxWordLetters.find(ch) == maxWordLetters.end()) {
+            foundLetters.insert(ch);
+            }
+        }
+
+        if (!foundLetters.empty()) {
+            writewordwithbr(currentWord, foundLetters, outputFile);
+        } 
+        else {
+
+        outputFile << currentWord << " ";
+        }
+    }
+}
+void readTextFromFile(const std::string& filename, std::string& text) {
+    std::ifstream inputFile(filename);
+    if (!inputFile) {
+        std::cerr << "Ошибка открытия файла"<< std::endl;
+        exit(1);
+    }
+    std::stringstream buffer;
+    buffer << inputFile.rdbuf();
+    text = buffer.str();
+}
+std::vector<std::string> splitTextIntoWords(const std::string& text) {
+    std::stringstream ss(text);
+    std::string word;
+    std::vector<std::string> wordsss;
+    while (ss >> word) {
+        wordsss.push_back(word);
+    }
+    return wordsss;
+}

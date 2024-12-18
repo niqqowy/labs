@@ -37,7 +37,19 @@ int main() {
     sort(n,words);
     write2(n,words);
     
-    
+
+
+
+
+    std::string text;
+    readTextFromFile("input3.txt", text); 
+    std::vector<std::string> wordss = splitTextIntoWords(text); 
+    std::string maxLengthWord = findMaxLengthWord(wordss); 
+    std::unordered_set<char> maxWordLetters = getLettersInWord(maxLengthWord); 
+    std::ofstream outputFile("output3.txt");
+
+    processText(wordss, maxWordLetters, outputFile); // Обработка текста и запись в файл
+
     return 0;
 }
 
