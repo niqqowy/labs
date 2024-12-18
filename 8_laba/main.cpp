@@ -48,7 +48,7 @@ int main() {
     std::unordered_set<char> maxWordLetters = getLettersInWord(maxLengthWord); 
     std::ofstream outputFile("output3.txt");
 
-    processText(wordss, maxWordLetters, outputFile); // Обработка текста и запись в файл
+    processText(wordss, maxWordLetters, outputFile); 
 
     return 0;
 }
