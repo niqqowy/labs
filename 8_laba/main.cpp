@@ -9,25 +9,35 @@
 #include "func.hpp"
 
 int main() {
-    std::set<std::string> Words = read("input.txt");
+    std::string inputFilename = "input1.txt";
+    std::string outputFilename = "output1.txt"; 
+    check(inputFilename, outputFilename);
 
-    if (Words.empty()) {
-        return -1;  
+
+
+
+    
+    int n;
+    std::string words[5120];
+
+    read2(n,words);
+    
+    if(iswordwithequal(n,words)){
+        removecons(n,words);
     }
-
-    std::vector<std::pair<int, std::string>> wordch; // скока пар гл/ слово само
-
    
-    for (const auto &w : Words) {
-        int pairCount = countpair(w);  
-        wordch.push_back({pairCount, w}); 
+    else{
+        for(int i=0;i<n;i++){
+            if(treech(words[i])){
+                duplicats(words[i]);
+            }
+        }
     }
-
-    std::sort(wordch.begin(), wordch.end(), std::greater<>());
-
-    writeRes(wordch,"output.txt");
-
-
+    
+    sort(n,words);
+    write2(n,words);
+    
+    
     return 0;
 }
 
