@@ -2,6 +2,9 @@
 #include "func.hpp"
 #include <list>
 #include <cmath>
+#include <algorithm>
+#include <vector>
+
 
 
 int main() {

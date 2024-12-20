@@ -1,6 +1,10 @@
 #include "func.hpp"
 #include <iostream>
+#include <list>
+#include <cmath>
+#include <algorithm>
 #include <vector>
+
 
 
 Node::Node(int val) : value(val), next(nullptr){}
