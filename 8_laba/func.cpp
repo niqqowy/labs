@@ -250,7 +250,7 @@ std::unordered_set<char> getLettersInWord(const std::vector<std::string>& words)
             }
         }
     }    
-        return letters;
+    return letters;
 }
 void writewordwithbr(const std::string& word, const std::unordered_set<char>& foundLetters, std::ofstream& outputFile) {
     std::string uppercaseWord = word;
