@@ -1,1 +1,1 @@
-HELLO(l, h) MY(y, m) favorite KARTON(n, k) 
+HELLO(h) MY(y) favorite KARTON(k) laminari 

@@ -224,23 +224,33 @@ std::string toLowerCase(const std::string& str) {
     }
     return result;
 }
-std::string findMaxLengthWord(const std::vector<std::string>& words) {
-    std::string maxWord;
+std::vector<std::string> findMaxLengthWord(const std::vector<std::string>& words) {
+    std::vector<std::string> maxWords;
+    size_t maxLength = 0;
+
     for (const std::string& word : words) {
-        if (word.length() > maxWord.length()) {
-            maxWord = word;
-        }
+        if (word.length() > maxLength) {
+            maxLength = word.length();
+            maxWords.clear(); // Очистим вектор, так как нашли большее слово
+            maxWords.push_back(word); // Добавим это слово
+        } 
+        else if (word.length() == maxLength) {
+            maxWords.push_back(word); // Добавим слово, если оно той же длины
+         }
     }
-    return maxWord;
+
+    return maxWords;
 }
-std::unordered_set<char> getLettersInWord(const std::string& word) {
+std::unordered_set<char> getLettersInWord(const std::vector<std::string>& words) {
     std::unordered_set<char> letters;
-    for (char ch : word) {
-        if (std::isalpha(ch)) {
-            letters.insert(std::tolower(ch)); 
+    for (const std::string& word : words){
+        for (char ch : word) {
+            if (std::isalpha(ch)) {
+                letters.insert(std::tolower(ch)); 
+            }
         }
-    }
-    return letters;
+    }    
+        return letters;
 }
 void writewordwithbr(const std::string& word, const std::unordered_set<char>& foundLetters, std::ofstream& outputFile) {
     std::string uppercaseWord = word;

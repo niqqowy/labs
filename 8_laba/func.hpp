@@ -37,8 +37,8 @@ int maxcount(int m, std::string words[5120]);
 
 
 std::string toLowerCase(const std::string& str);
-std::string findMaxLengthWord(const std::vector<std::string>& words);
-std::unordered_set<char> getLettersInWord(const std::string& word);
+std::vector<std::string> findMaxLengthWord(const std::vector<std::string>& words);
+std::unordered_set<char> getLettersInWord(const std::vector<std::string>& words);
 void writewordwithbr(const std::string& word, const std::unordered_set<char>& foundLetters, std::ofstream& outputFile);
 void processText(const std::vector<std::string>& words,const std::unordered_set<char>& maxWordLetters,std::ofstream& outputFile);
 void check3(const std::string& inputFilee, const std::string& outputFilee);
