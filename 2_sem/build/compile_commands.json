@@ -1,0 +1,68 @@
+[
+{
+  "directory": "/Users/niqqowy/Documents/VScode/2_sem/build/lab1",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/lab1_executable.dir/src/main.cpp.o -c /Users/niqqowy/Documents/VScode/2_sem/lab1/src/main.cpp",
+  "file": "/Users/niqqowy/Documents/VScode/2_sem/lab1/src/main.cpp",
+  "output": "lab1/CMakeFiles/lab1_executable.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/niqqowy/Documents/VScode/2_sem/build/lab1",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/lab1_executable.dir/src/Containers/Chain.cpp.o -c /Users/niqqowy/Documents/VScode/2_sem/lab1/src/Containers/Chain.cpp",
+  "file": "/Users/niqqowy/Documents/VScode/2_sem/lab1/src/Containers/Chain.cpp",
+  "output": "lab1/CMakeFiles/lab1_executable.dir/src/Containers/Chain.cpp.o"
+},
+{
+  "directory": "/Users/niqqowy/Documents/VScode/2_sem/build/lab1",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/lab1_executable.dir/src/Containers/List.cpp.o -c /Users/niqqowy/Documents/VScode/2_sem/lab1/src/Containers/List.cpp",
+  "file": "/Users/niqqowy/Documents/VScode/2_sem/lab1/src/Containers/List.cpp",
+  "output": "lab1/CMakeFiles/lab1_executable.dir/src/Containers/List.cpp.o"
+},
+{
+  "directory": "/Users/niqqowy/Documents/VScode/2_sem/build/lab1",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/lab1_executable.dir/src/Tests/Logical/Test1.cpp.o -c /Users/niqqowy/Documents/VScode/2_sem/lab1/src/Tests/Logical/Test1.cpp",
+  "file": "/Users/niqqowy/Documents/VScode/2_sem/lab1/src/Tests/Logical/Test1.cpp",
+  "output": "lab1/CMakeFiles/lab1_executable.dir/src/Tests/Logical/Test1.cpp.o"
+},
+{
+  "directory": "/Users/niqqowy/Documents/VScode/2_sem/build/lab1",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/lab1_executable.dir/src/Tests/Functional/Test2.cpp.o -c /Users/niqqowy/Documents/VScode/2_sem/lab1/src/Tests/Functional/Test2.cpp",
+  "file": "/Users/niqqowy/Documents/VScode/2_sem/lab1/src/Tests/Functional/Test2.cpp",
+  "output": "lab1/CMakeFiles/lab1_executable.dir/src/Tests/Functional/Test2.cpp.o"
+},
+{
+  "directory": "/Users/niqqowy/Documents/VScode/2_sem/build/lab1",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/lab1_executable.dir/src/Tests/Functional/TestAddNode.cpp.o -c /Users/niqqowy/Documents/VScode/2_sem/lab1/src/Tests/Functional/TestAddNode.cpp",
+  "file": "/Users/niqqowy/Documents/VScode/2_sem/lab1/src/Tests/Functional/TestAddNode.cpp",
+  "output": "lab1/CMakeFiles/lab1_executable.dir/src/Tests/Functional/TestAddNode.cpp.o"
+},
+{
+  "directory": "/Users/niqqowy/Documents/VScode/2_sem/build/lab2",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/lab2_executable.dir/src/main.cpp.o -c /Users/niqqowy/Documents/VScode/2_sem/lab2/src/main.cpp",
+  "file": "/Users/niqqowy/Documents/VScode/2_sem/lab2/src/main.cpp",
+  "output": "lab2/CMakeFiles/lab2_executable.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/niqqowy/Documents/VScode/2_sem/build/lab2",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/lab2_executable.dir/src/Containers/Chain.cpp.o -c /Users/niqqowy/Documents/VScode/2_sem/lab2/src/Containers/Chain.cpp",
+  "file": "/Users/niqqowy/Documents/VScode/2_sem/lab2/src/Containers/Chain.cpp",
+  "output": "lab2/CMakeFiles/lab2_executable.dir/src/Containers/Chain.cpp.o"
+},
+{
+  "directory": "/Users/niqqowy/Documents/VScode/2_sem/build/lab2",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/lab2_executable.dir/src/Containers/List.cpp.o -c /Users/niqqowy/Documents/VScode/2_sem/lab2/src/Containers/List.cpp",
+  "file": "/Users/niqqowy/Documents/VScode/2_sem/lab2/src/Containers/List.cpp",
+  "output": "lab2/CMakeFiles/lab2_executable.dir/src/Containers/List.cpp.o"
+},
+{
+  "directory": "/Users/niqqowy/Documents/VScode/2_sem/build/lab2",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/lab2_executable.dir/src/Tests/Logical/Test1.cpp.o -c /Users/niqqowy/Documents/VScode/2_sem/lab2/src/Tests/Logical/Test1.cpp",
+  "file": "/Users/niqqowy/Documents/VScode/2_sem/lab2/src/Tests/Logical/Test1.cpp",
+  "output": "lab2/CMakeFiles/lab2_executable.dir/src/Tests/Logical/Test1.cpp.o"
+},
+{
+  "directory": "/Users/niqqowy/Documents/VScode/2_sem/build/lab2",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/lab2_executable.dir/src/Tests/Functional/Test2.cpp.o -c /Users/niqqowy/Documents/VScode/2_sem/lab2/src/Tests/Functional/Test2.cpp",
+  "file": "/Users/niqqowy/Documents/VScode/2_sem/lab2/src/Tests/Functional/Test2.cpp",
+  "output": "lab2/CMakeFiles/lab2_executable.dir/src/Tests/Functional/Test2.cpp.o"
+}
+]

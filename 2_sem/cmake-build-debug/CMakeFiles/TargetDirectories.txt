@@ -1,0 +1,8 @@
+/Users/antonglomadov/CLionProjects/githubExample/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/antonglomadov/CLionProjects/githubExample/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/antonglomadov/CLionProjects/githubExample/cmake-build-debug/lab1/CMakeFiles/lab1_executable.dir
+/Users/antonglomadov/CLionProjects/githubExample/cmake-build-debug/lab1/CMakeFiles/edit_cache.dir
+/Users/antonglomadov/CLionProjects/githubExample/cmake-build-debug/lab1/CMakeFiles/rebuild_cache.dir
+/Users/antonglomadov/CLionProjects/githubExample/cmake-build-debug/lab2/CMakeFiles/lab2_executable.dir
+/Users/antonglomadov/CLionProjects/githubExample/cmake-build-debug/lab2/CMakeFiles/edit_cache.dir
+/Users/antonglomadov/CLionProjects/githubExample/cmake-build-debug/lab2/CMakeFiles/rebuild_cache.dir

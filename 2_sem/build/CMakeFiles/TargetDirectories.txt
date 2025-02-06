@@ -1,0 +1,8 @@
+/Users/niqqowy/Documents/VScode/2_sem/build/CMakeFiles/edit_cache.dir
+/Users/niqqowy/Documents/VScode/2_sem/build/CMakeFiles/rebuild_cache.dir
+/Users/niqqowy/Documents/VScode/2_sem/build/lab1/CMakeFiles/lab1_executable.dir
+/Users/niqqowy/Documents/VScode/2_sem/build/lab1/CMakeFiles/edit_cache.dir
+/Users/niqqowy/Documents/VScode/2_sem/build/lab1/CMakeFiles/rebuild_cache.dir
+/Users/niqqowy/Documents/VScode/2_sem/build/lab2/CMakeFiles/lab2_executable.dir
+/Users/niqqowy/Documents/VScode/2_sem/build/lab2/CMakeFiles/edit_cache.dir
+/Users/niqqowy/Documents/VScode/2_sem/build/lab2/CMakeFiles/rebuild_cache.dir
